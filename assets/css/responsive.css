@@ -1,0 +1,58 @@
+@media only screen and  (min-width: 1200px) {
+	
+}
+
+@media only screen and (max-width: 991px) {
+	
+	.beraw h1{    
+    	font-size: 160px;
+	}	
+	
+}
+
+
+@media only screen and (max-width: 771px) {	
+	.beraw h1{    
+    	font-size: 160px;
+	}
+	.logo{
+		text-align: center;
+	}
+	.logo a img {
+	    height: 25px;
+	}
+}
+
+
+@media only screen and (max-width: 551px) {
+	.beraw h1{    
+    	font-size: 100px;
+	}
+	.logo{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 479px) {	
+	.beraw h1{    
+    	font-size: 80px;
+	}
+	.logo{
+		text-align: center;
+	}
+	.logo a img {
+	    height: 25px;
+	}
+}
+
+@media only screen and (max-width: 260px) {	
+	.beraw h1{    
+    	font-size: 60px;
+	}
+	.logo{
+		text-align: center;
+	}
+	.logo a img {
+	    height: 15px;
+	}
+}

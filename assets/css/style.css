@@ -1,0 +1,414 @@
+/*================================
+1. Header
+================================*/
+@font-face {
+    font-family: 'Good Brush';
+    src: url('../fonts/Good Brush.otf');   
+    src: url('../fonts/Good Brush.ttf');   
+}
+ul,
+li,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+section,
+img,
+aside,
+header,
+footer {
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+body{
+    font-family: 'Montserrat' ;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* ====================
+HEADER
+===================== */
+.header{
+    position: relative;
+    padding: 10px 0;
+}
+.header .logo{
+    position: relative;
+}
+.header .logo img{
+    width: 100%;
+}
+.menuWrap {
+    text-align: right;
+    padding: 34px 0;
+}
+.menuWrap .mainMenu{
+    position: relative;
+}
+.menuWrap .mainMenu li {
+    list-style-type: none;
+    display: inline-block;
+}
+.menuWrap .mainMenu li a {
+    color: #5F3757;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 25px
+}
+.mainMenu li a:hover{
+    color: #ED991F;
+    text-decoration: none;
+}
+.mainMenu .contact a{
+    background-color: #5F3757;
+    color: #ffffff !important;
+}
+.mainMenu .contact a:hover{
+    background-color: #ED991F;
+    text-decoration: none;
+}
+
+/* =============== BANNER ============== */
+.banner{
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+.banenrContent {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.banenrContent h1 {
+    color: #ffffff;
+    font-size: 98px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+}
+.banenrContent p {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+.banenrContent .btnWrp {
+    position: relative;
+}
+.btnMission{
+    background-color: #5F3757;
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration: none;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.btnMission:hover{
+    background-color: #ED991F;
+    text-decoration: none;    
+    color: #ffffff;
+}
+.banenrContent .btnWrp a{
+    margin: 0 10px;
+}
+
+
+/* =============== MISSION ============== */
+.mission{
+    position: relative;
+    padding: 100px 0 50px 0;
+}
+.titlev1{
+    position: relative;
+    margin-bottom: 20px;
+}
+.titlev1 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    position: relative;
+    color: #5F3757;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+.titlev1 h2:after{
+    position: absolute;
+    height: 2px;
+    background-color: #5F3757;
+    width: 110px;
+    left: 0;
+    bottom: 0;
+    content: '';
+}
+.mission .missionText{
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    color: #5F3757;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+.mission .content{
+    margin-top: 30px;
+}
+.mission .content .textgrey{
+    color: #747474;
+    font-weight: 700;
+    font-size: 18px;
+}
+.mission .content ul {
+    margin: 0;
+    padding: 0;
+}
+.mission .content p{
+    /* padding-left: 25px; */
+    margin: 15px 0;
+    list-style: none;
+    position: relative;
+}
+.mission .contact p:after{
+    content: "";
+    color: #747474;
+    display: inline-block;
+    background-image: url('../images/angle.png');
+    position: absolute;
+    left: 0;
+
+}
+.mission .missionImage{
+    position: relative;
+}
+.mission .missionImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.flexRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.posLeft {
+    order: 2;
+}
+
+/* =============== CONTACT ============== */
+.contactwrap {
+    padding: 60px 0 60px 0;
+    position: relative;
+    background-color: #5F3757;
+}
+.titlev2{
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.titlev2 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    position: relative;
+    color: #ffffff;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+.titlev2 h2:after{
+    position: absolute;
+    height: 2px;
+    background-color: #ffffff;
+    width: 110px;
+    left: 0;
+    bottom: 0;
+    content: '';
+}
+.contactwrap .sbText{
+    color: #ffffff;
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.textCenter{
+    text-align: center;
+}
+.contactwrap .formwrap{
+    width: 60%;
+    display: inline-block;
+    margin-top: 40px;
+}
+.contactwrap .formwrap .form-group{
+    margin-bottom: 20px;
+}
+.contactwrap .formwrap .form-control{
+    background-color: transparent;
+    color: #ffffff;
+    height: 55px;
+    font-size: 18px;
+}
+.contactwrap .formwrap .form-textarea{
+    background-color: transparent;
+    color: #ffffff;
+    min-height: 155px;
+    font-size: 18px;
+}
+.contactwrap ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+color: white;
+}
+.contactwrap ::-moz-placeholder { /* Firefox 19+ */
+color: white;
+}
+.contactwrap :-ms-input-placeholder { /* IE 10+ */
+color: white;
+}
+.contactwrap :-moz-placeholder { /* Firefox 18- */
+color: white;
+}
+.btnSubmit {
+    background: #ED991F;
+    border-color: #ED991F;
+    color: #fff;
+    width: 100%;
+    height: 55px;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btnSubmit:hover{
+    color: #ED991F;
+    background-color: transparent;
+    border-color: #ED991F;
+}
+
+
+
+
+/* =============== VIDEO ============== */
+.videoWrap {
+    position: relative;
+    padding: 40px 0 40px 0;
+}
+.videoWrap .videoTitle {
+    text-align: center;
+    margin-top: 100px;
+}
+.videoWrap .videoTitle h2 {
+    color: #5F3757;
+    color: #ED991F;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 78px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 21px;
+}
+.videoWrap .videoTitle h4{
+    color: #5F3757;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.videoWrap .videoBox {
+    /* border: 1px solid #5F3757; */
+    border-radius: 15px;
+    padding: 10px 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.09);
+}
+.videoWrap .videoBox video {
+    height: 620px;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+}
+.boxShadow{
+    background: #fff;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.09);
+}
+
+
+/* =============== FOOTER ============== */
+.siteFooter{
+    background-color: #000000;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+}
+.siteFooter .footerLogo{
+    margin-bottom: 30px;
+}
+.siteFooter .footerLogo img{
+    height: 120px;
+}
+.companyName {
+    text-align: center;
+    color: #8c8989;
+    font-size: 14px;
+}
+
+.share {
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+.share li {
+    list-style-type: none;
+    display: inline-block;
+}
+.share li a{
+    text-align: center;
+    text-decoration: none;
+    height: 55px;
+    width: 55px;
+    border: 1px solid #ED991F;
+    border-radius: 50%;
+    line-height: 55px;
+    font-size: 24px;
+    margin: 0 5px;
+    color: #ED991F;
+    display: inline-block;
+}
+.share li a:hover {
+    background-color: #ED991F;
+    color:#000000;
+}
+.stickytop{
+    background: #fff;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.09);
+    text-decoration: none;
+    -webkit-transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in;
+    -ms-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    min-height: 70px;
+}
+
+.stickytop .logo img{
+    width: 65%;
+}
+.stickytop  .menuWrap {
+    text-align: right;
+    padding: 13px 0;
+}
